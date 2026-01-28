@@ -38,3 +38,5 @@ connectDB().then(() => {
         console.log(`Server is running on PORT: ${PORT}`);
     });
 });
+
+// Trigger backend CI pipeline

@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5001;
 //Middlewares
 // Enable CORS
 app.use(cors({
-    origin: 'https://sensational-bunny-368bab.netlify.app'
+    origin: 'https://mern-thinkboard-98.netlify.app'
     // origin: 'http://localhost:5173' // Adjust this to your frontend's origin
 }));
 // Middleware to parse JSON bodies

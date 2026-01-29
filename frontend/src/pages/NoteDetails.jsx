@@ -14,7 +14,7 @@ const NoteDetails = () => {
   useEffect(() => {
     const fetchNote = async () => {
       try {
-        const note = await api.get(`/notes/${id}`);
+        const note = await api.get(`/api/notes/${id}`);
         setNote(note.data);
       } catch (error) {
         console.error("Error fetching note: ", error);
@@ -44,7 +44,7 @@ const NoteDetails = () => {
 
     setLoading(true);
     try {
-      await api.put(`/notes/${id}`, note);
+      await api.put(`/api/notes/${id}`, note);
       toast.success("Note saved successfully");
       navigate("/");
     } catch (error) {
@@ -66,7 +66,7 @@ const NoteDetails = () => {
     setLoading(true);
 
     try {
-      await api.delete(`/notes/${id}`);
+      await api.delete(`/api/notes/${id}`);
       toast.success("Note deleted successfully");
       navigate("/");
 

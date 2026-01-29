@@ -16,7 +16,7 @@ const Home = () => {
     const fetchNotes = async () => {
       setLoading(true);
       try {
-        const response = await api.get('/notes');
+        const response = await api.get('/api/notes');
         
         console.log(response.data);
         setNotes(response.data);
